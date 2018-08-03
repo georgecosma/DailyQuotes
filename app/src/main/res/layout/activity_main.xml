@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_dark"
+    tools:context="com.example.gcosma.dailyquotes.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/ivbackground_mdpi"
+        />
+    <TextView
+        android:text="wondering..."
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTodayQuote"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:alpha="0.60"
+        android:background="@android:color/background_dark"
+        android:textAlignment="center"
+        android:layout_marginTop="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Quote Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark"
+        android:alpha="0.60"
+        android:textColor="#6AB8C4"
+        android:padding="5dp"
+        android:id="@+id/btnQuoteDetails"
+        android:layout_above="@+id/btnTodayQuote"
+        android:layout_alignRight="@+id/btnTodayQuote"
+        android:layout_alignEnd="@+id/btnTodayQuote" />
+
+    <Button
+        android:text="Today's quote"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTodayQuote"
+        android:background="@android:color/background_dark"
+        android:textColor="#6AB8C4"
+        android:alpha="0.60"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

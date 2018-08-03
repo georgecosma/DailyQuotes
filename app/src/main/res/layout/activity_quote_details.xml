@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quote_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_dark"
+    tools:context="com.example.gcosma.dailyquotes.QuoteDetailsActivity">
+
+    <ImageView
+        android:id="@+id/ivBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:alpha="0.60"
+        android:background="@android:color/background_dark">
+
+        <TextView
+            android:text="Inspiring quote of the day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvTitle" />
+
+        <TextView
+            android:text="quote.."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:alpha="0.60"
+            android:background="@android:color/background_dark"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:id="@+id/tvQuote" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textStyle="bold"
+        android:alpha="0.60"
+        android:background="@android:color/background_dark"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Author: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvAuthorLabel" />
+
+        <TextView
+            android:text="Category:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCategoryLabel"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tvAuthorLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp" />
+        <TextView
+            android:text="AUTHORNAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvCategoryLabel"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/tvCategoryLabel"
+            android:layout_toEndOf="@+id/tvCategoryLabel"
+            android:id="@+id/tvAuthor" />
+
+        <TextView
+            android:text="CATEGORYNAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvCategoryLabel"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/tvCategoryLabel"
+            android:layout_toEndOf="@+id/tvCategoryLabel"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:id="@+id/tvCategory" />
+    </RelativeLayout>
+
+    <!--
+    <TextView
+        android:text="Tags:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvCategoryLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/tvTagsLabel" />
+    -->
+
+    <!--
+    <TextView
+        android:text="TAGSLIST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvTagsLabel"
+        android:textColor="#fff"
+        android:layout_toRightOf="@+id/tvAuthorLabel"
+        android:layout_toEndOf="@+id/tvAuthorLabel"
+        android:id="@+id/tvTags" />
+    -->
+</RelativeLayout>
