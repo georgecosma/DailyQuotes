@@ -3,7 +3,7 @@
 A simple Android App which consumes a public Web API data and displays the quote of the day and other quotes by categories.
 
 <p align="center">
-  <img width="460" height="300" src="https://i.imgur.com/7xQVcSC.png">
+  <img width="100%" height="100%" src="https://i.imgur.com/7xQVcSC.png">
 </p>
 
 ## Using the code
