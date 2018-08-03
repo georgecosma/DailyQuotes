@@ -6,7 +6,7 @@ A simple Android App which consumes a public Web API data and displays the quote
   <img width="460" height="300" src="https://i.imgur.com/7xQVcSC.png">
 </p>
 
-## Getting Started
+## Using the code
 
 In order to get this App up and running on your local machine, you simply have to download the project and open it with VisualStudio IDE. Feel free to adjust or enhance it by your needs.
 
